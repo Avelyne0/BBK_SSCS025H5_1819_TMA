@@ -1,0 +1,6 @@
+$handle = fopen('people.txt', 'r');
+while (!feof($handle)) {
+$name = fgets($handle, 1024);
+echo '<p>' . $name . '</p>';
+}
+fclose($handle);
